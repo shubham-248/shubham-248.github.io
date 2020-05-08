@@ -5,116 +5,148 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style>
+
 	<style>
         h1 {
-     font-size: 4em;
+     font-size: 2em;
      text-align: center;
    }
-                h2 {
+                h6 {
+     font-size: 16px;
      text-align: center;
    }
-        div {
-      height: 50px;
-      width: 100%;
-    }
+                h8 {
+                     text-align: center;
+                    font-size: 3em;
+   }
         
 .center {
   margin: auto;
-  width: 60%;
+  width: 62%;
   padding: 10px;
 }
-        
-.center_div{
-    margin: 0 auto;
-    width:91% /* value of your choice which suits your alignment */
-}
-        
-        
+        div.wrapper {
+            width: 370px;
+            height:10px;
+        }
         mi {
   display: block;
 }
+
+        .btn-xl {
+    padding: 15px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    width:50%;    //Specify your width here
+}
+
+input[type="text"]
+{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+        
+        ::-webkit-input-placeholder { /* Edge */
+  color: black;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: black;
+}
+
+::placeholder {
+  color: black;
+}
+        
+        
 	</style>
 </head>
-<body style="background-color:rgb(70,215,215);">
-    
-    <br>
-    <h2>Create Your Room </h2>
-    
-    <div></div><label class="col-md-4 control-label" for="Roomname">Room Name</label>
-    
-    <div class="container center_div">
-	<div class="container">
-  <form action="/action_page.php">
-    <div class="row">
-      <div class="col">
-        <input type="text" class="form-control" id="RoomName" placeholder="Enter Room Name" name="RoomName" style=" height: 35px;width: 261px">
-      </div>
-    </div>
-  </form>
-</div>
-    </div>
-	<!---
+<body style="background-color:rgb(241,132,12);" class="">
     <div></div>
-   
-    <label for="Players" class="control-label clo-xs-1">Number of Players</label>
-      <div class="form-group">
-          <div class="col-xs-3">
-    <select class="form-control input-sm">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-    --->
-    <br>
-          
-          
-<form class="form-inline">
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Players">Number of Players</label>
-  <div class="col-md-4">
-    <select id="Players" name="Players" class="form-control">
-      <option value="1">Single Player - 1</option>
-      <option value="2">Two Players - 2</option>
-      <option value="3">Three Players - 3</option>
-      <option value="4">Four Players - 4</option>
-      <option value="5">Five Players - 5</option>
-      <option value="6">Six Players - 6</option>
-    </select>
-  </div>
+    <br><br><br><br><br>
+ 	<h1><img src="default_dp.png" height="160" width="144"></h1>
+   <h1>
+       <div class="container center_div">
+           <div class="wrapper">
+  <input type="text" placeholder="Enter Username">
 </div>
-</form>
-          
-<br>
+       </div>
+    </h1><br>
     
-<form class="form-inline">
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Rounds">Number of Rounds</label>
-  <div class="col-md-4">
-    <select id="Players" name="Rounds" class="form-control">
-      <option value="1">Single Round -1</option>
-      <option value="2">Five Rounds - 5</option>
-      <option value="3">Ten Rounds - 10</option>
-      <option value="4">Fifteen Rounds - 15</option>
-      <option value="5">Twenty Rounds - 20</option>
-      <option value="6">Twenty-Five Rounds - 25</option>
-    </select>
-  </div>
-</div>
-</form>
-    
-          
-  <div></div>         
-    
+    <h6>Tap to change</h6>
+    <div></div>
+    <br><br><br>
     <div class="center">
         <mi>
-            <a href="https://shubham-248.github.io/">
-	<button style=" height: 50px;width: 172px" class="btn btn-success" type="button">Create Room</button> </a>
+            <a href="CreateRoom.html">
+	<button type="button" class="btn btn-success btn-xl waves-effect waves-light " style=" height: 50px;width: 172px">Create Room</button></a><a href="https://shubham-248.github.io/"> </a>
         </mi>
             </div>
+<br>
     
-    <div></div>
+<!--Modal: Login with Avatar Form-->
+<div class="modal fade" id="modalJoinRoom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+    <!--Content-->
+    <div class="modal-content">
 
-</body></html>
+      <!--Header-->
+      <div class="modal-header">
+        <img src="default_dp.png" alt="avatar" class="rounded-circle img-responsive">
+      </div>
+      <!--Body-->
+      <div class="modal-body text-center mb-1">
+
+        <h5 class="mt-1 mb-2">User4801</h5>
+
+        <div class="md-form ml-0 mr-0">
+          <input type="password" id="form29" class="form-control form-control-sm">
+          <label for="form29" class="ml-0">Enter Room ID</label>
+        </div>
+
+        <div class="text-center mt-4">
+          <button class="btn btn-cyan mt-1 waves-effect waves-light">Join Room <i class="fas fa-sign-in ml-1"></i></button>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login with Avatar Form-->
+
+<div class="center"><mi>
+  <a href="" class="btn btn-success btn-xl btn purple-gradient btn-rounded waves-effect waves-light" style=" height: 50px;width: 172px" data-toggle="modal" data-target="#modalJoinRoom">Join Room</a>
+    </mi></div>
+
+
+
+
+<div class="hiddendiv common"></div></body></html>
